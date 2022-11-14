@@ -23,9 +23,18 @@ function changeImage()
 		element.src="/image/u=232356131,4119863988&fm=253&fmt=auto&app=138&f=JPEG.webp";
 	}
 }
+function mymakka(){
+	var x=document.getElementById("makka").value;
+	if(x==""||x!="屁屁"&&x!="扁扁"&&x!="鼓鼓"){
+		alert("不是玛卡！！！");
+	}
+
+} 
 </script>
 <img id="mydogimage" onclick="changeImage()" src="/image/u=1250318974,678267413&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto.webp" >
 <p>点击修勾就可以变换不同的修勾</p>
-	
+<h1>输入你想要查询的玛卡名字（中文）</h1>
+<input id="makka" type="text">
+<button type="button" onclick ="mymakka()">点击这里检测是否是玛卡</button>
 </body>
 </html>
