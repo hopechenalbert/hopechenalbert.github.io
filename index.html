@@ -1,1 +1,31 @@
-####RNG####
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>修勾展览(doggo.com)</title> 
+</head>
+<body>
+	
+<script>
+function changeImage()
+{
+	element=document.getElementById('mydogimage')
+	if (element.src.match("u=232356131,4119863988&fm=253&fmt=auto&app=138&f=JPEG.webp"))
+	{
+		element.src="/image/c13abb6ae03146ada0fd7b5f922f6b1c.jpg";
+	}
+	else if (element.src.match("/image/c13abb6ae03146ada0fd7b5f922f6b1c.jpg"))
+	{
+		element.src="/image/u=1250318974,678267413&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto.webp";
+	}
+    else
+	{
+		element.src="/image/u=232356131,4119863988&fm=253&fmt=auto&app=138&f=JPEG.webp";
+	}
+}
+</script>
+<img id="mydogimage" onclick="changeImage()" src="/image/u=1250318974,678267413&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto.webp" >
+<p>点击修勾就可以变换不同的修勾</p>
+	
+</body>
+</html>
