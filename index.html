@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head> 
 <meta charset="utf-8"> 
@@ -39,4 +39,115 @@ function mymakka(){
 <input id="makka" type="text">
 <button type="button" onclick ="mymakka()">点击这里检测是否是玛卡</button>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原生JS实现网页导航条特效</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            font-family: '微软雅黑', sans-serif;
+        }
+ 
+        body {
+            background: #000;
+            min-height: 200vh;
+        }
+ 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 2;
+        }
+ 
+        header.sticky {
+            padding: 5px 100px;
+            background: #fff;
+        }
+ 
+        header .logo {
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0;
+        }
+ 
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+ 
+        header ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.5s;
+        }
+ 
+ 
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url(bg.jpg);
+            background-size: cover;
+        }
+ 
+        header.sticky .logo,
+        header.sticky ul li a {
+            color: #000;
+        }
+    </style>
+</head>
+ 
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">联系</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script>
+        window.addEventListener('scroll', () => {
+            let header = document.querySelector('header')
+            // 重要属性
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+</body>
+ 
 </html>
+
