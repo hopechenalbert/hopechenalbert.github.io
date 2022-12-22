@@ -1,5 +1,5 @@
-			let users=[{name:'asd',pwd:'111'},{name:'王五',pwd:'111'},{name:'a',pwd:'111'}];
-			let gly=[{name:'张三',pwd:'123'},{name:'李四',pwd:'123'}]
+			let users=[{name:'老师',pwd:'111'},{name:'hope',pwd:'123456'},{name:'test_user',pwd:'1111'}];
+			let gly=[{name:'舒老师',pwd:'123'},{name:'陈厚朴',pwd:'20051408'}]
 			
 			let username=document.getElementById("username");
 			let pwd=document.getElementById("pwd");
