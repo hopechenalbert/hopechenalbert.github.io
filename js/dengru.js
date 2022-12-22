@@ -19,11 +19,11 @@
 				/* 判断键盘获取用户名和密码是否注册了并存储在了locaStorage中 */
 				if(username.value==localStorage.getItem('username1') && pwd.value==localStorage.getItem('pwd1')){
 					alert("用户登入成功");
-					window.location.href="index1.html"
+					window.location.href="index.html"
 						/* 判断是否是预设账户 并判断是用户或管理分别跳转 */		
 				}else if(ret){
 					alert("用户登入成功");
-					window.location.href="index1.html"
+					window.location.href="index.html"
 					
 				}else if(gly1){
 					alert("管理员登入成功");
